@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">GoGo语音识别</string>
+    <string name="title_activity_main">GoGo语音识别</string>
+    <string name="srss">识别结果展示</string>
+    <string name="is_continuous">连续语音识别</string>
+    <string name="is_autostop">自动停止录音</string>
+    <string name="positive">是</string>
+    <string name="negative">否</string>
+	<string name="blog_addr">更多精彩请关注我的微博:http://weibo.com/fengtengfei90</string>
+	<string name="str_sms_sending">正在发送</string>
+	<string name="str_sms_sent_success">发送成功</string>
+	<string name="str_sms_sent_failed">信息发送失败</string>
+	<string name="str_sms_rec_success">信息接收成功</string>
+	<string name="str_sms_rec_failed">信息接收失败</string>
+	
+	
+	<string name="sample_device_admin_description">我是GoGo语音的一键锁屏应用，我可以帮助您保护你的电源键</string>
+    <string name="sample_device_admin">我是一键锁屏</string>
+</resources>

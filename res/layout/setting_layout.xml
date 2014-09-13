@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 界面显示 -->
+
+            <LinearLayout style="@style/leba_bg_layout" >
+
+                <LinearLayout style="@style/leba_bg_single_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_weight="1.0"
+                        android:text="界面显示"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 反馈建议	关于 -->
+
+            <LinearLayout style="@style/leba_bg_layout" >
+
+                <!-- 反馈建议 -->
+
+                <LinearLayout style="@style/leba_bg_top_layout" android:id="@+id/ll_feedback" android:onClick="my_feedback">
+
+                    <TextView
+                        android:id="@+id/idea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_weight="1.0"
+                        android:text="反馈建议"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/leba_shape_line" />
+
+                <!-- 关于 -->
+
+                <LinearLayout style="@style/leba_bg_bottom_layout" android:id="@+id/ll_about" android:onClick="myAbout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_weight="1.0"
+                        android:text="关于"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 声音提示	震动提示	     消息提示 -->
+
+            <LinearLayout style="@style/leba_bg_layout" >
+
+                <!-- 声音提示 -->
+
+                <LinearLayout style="@style/leba_bg_top_layout" android:id="@+id/ll_voice" android:onClick="myVoice">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_weight="1.0"
+                        android:text="声音"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/leba_shape_line" />
+
+                <!-- 震动提示 -->
+
+                <LinearLayout style="@style/leba_bg_mid_layout" android:id="@+id/ll_shake" android:onClick="myShake">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_weight="1.0"
+                        android:text="震动提示"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/leba_shape_line" />
+
+                <!-- 消息提示 -->
+
+                <LinearLayout style="@style/leba_bg_bottom_layout" android:id="@+id/ll_message" android:onClick="myMessage">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_weight="1.0"
+                        android:text="消息提示"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12.0dip"
+                        android:src="@drawable/setting_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/leba_bg_layout"
+                android:id="@+id/ll_weibo"
+                android:onClick="myWeibo"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
+                    android:text="@string/blog_addr"
+                    android:textColor="#ffaa0000"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
